@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-BOOKS"
+        android:id="@+id/textView"
+        android:textColor="#ff4059ff"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size"
+        android:layout_marginTop="69dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPEN FILES"
+        android:id="@+id/button"
+        android:layout_marginTop="161dp"
+        android:textColor="#ffffffff"
+        android:singleLine="true"
+        android:background="#ff5d5d5d"
+        android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:clickable="false"
+        android:nestedScrollingEnabled="false"
+        android:onClick="openClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECENT"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="98dp"
+        android:textColor="#ffffffff"
+        android:background="#ff5d5d5d"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        android:onClick="recentClicked" />
+</RelativeLayout>
